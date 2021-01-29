@@ -1,6 +1,8 @@
 # Sri Lanka NIC Details Extractor
 Extract details from Sri Lankan National ID card number
 
+<img alt="GitHub all releases" src="https://img.shields.io/github/downloads/samithawijesekara/Sri-Lanka-NIC-Details-Extractor/total?color=12">
+
 💻😍 You can use this link to send me a message : https://sri-lanka-nic-details-extractor.netlify.app/
 
 ### Table of Content
