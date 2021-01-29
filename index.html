@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Sri Lanka NIC Details Extractor</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--===============================================================================================-->
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!--===============================================================================================-->
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1 class="animated fadeIn animHead" style="color: antiquewhite; text-align: center; margin-top: 1rem;">Sri Lanka NIC Details Extractor</h1>
+
+        <div class="wrap">
+            <div style="text-align: center;" class="animated bounceInDown anim">
+                <i class="fa fa-id-card pic" aria-hidden="true"></i>
+            </div>
+            <div class="form-group animated fadeIn">
+                <label>ID Number</label>
+                <input style="border-radius: 20px;" type="text" class="form-control" placeholder="Enter your NIC Number" id="idnum" autocomplete="off">
+                <span class="error" id="errorId"></span><br><br>
+
+                <div style="margin-top: -10px;">
+                    <button class="btn btn-danger btnOne" onclick="resultDisplay()" onmousedown="bleep.play()">Extract Details</button>
+                    <button class="btn btn-primary btnTwo" onClick="window.location.reload();" onmousedown="bleep.play()">Reset</button>
+                </div>
+
+                <div id="results" style="display: none;">
+                    <p class="resultLable">Date of Birth : </p>
+                    <div class="result" id="birthday"></div>
+                    <p class="resultLable">Gender : </p>
+                    <div class="result" id="gender"></div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+    <p class="footer animated fadeIn "><i>Developed by <a href="https://github.com/samithawijesekara " target="_blank ">Samitha Wijesekara</a></i></p><br><br>
+
+    <!--===============================================================================================-->
+    <script src="script.js "></script>
+    <!--===============================================================================================-->
+</body>
+
+</html>
