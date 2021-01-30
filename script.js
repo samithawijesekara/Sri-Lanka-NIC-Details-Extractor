@@ -34,7 +34,7 @@ function resultDisplay() {
     if (idNumber.length == 10 && (checkV == true || checkv == true) && (checkThreeOld <= 366 || (checkThreeOld >= 501 && checkThreeOld <= 866))) {
         document.getElementById("errorId").innerHTML = "This is a OLD NIC";
         oldNIC(idNumber);
-    } else if (idNumber.length == 12 && (checkOne == true || checkTow == true) && checkThreeNew <= 366 || (checkThreeNew >= 501 && checkThreeNew <= 866)) {
+    } else if (idNumber.length == 12 && (checkOne == true || checkTow == true) && (checkThreeNew <= 366 || (checkThreeNew >= 501 && checkThreeNew <= 866))) {
         document.getElementById("errorId").innerHTML = "This is a NEW NIC";
         newNIC(idNumber);
     } else {
