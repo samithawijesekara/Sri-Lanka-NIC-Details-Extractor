@@ -157,12 +157,19 @@ a:hover {
     .wrap {
         width: 100%;
         margin-left: 50%;
+        margin-top: 2.5rem;
     }
     .btnOne {
         width: 130px;
     }
     .btnTwo {
         width: 70px;
+    }
+    h1 {
+        font-size: 28px;
+    }
+     ::placeholder {
+        font-size: 14px;
     }
 }
 

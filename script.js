@@ -29,19 +29,12 @@ function resultDisplay() {
     var checkOne = idNumber.startsWith('1');
     var checkTow = idNumber.startsWith('2');
 
-    //(idNumber.length == 10 && (checkV == true || checkv == true) && (checkThreeOld <= 866))
-
-    //update(idNumber.length == 10 && (checkV == true || checkv == true) && (checkThreeOld <= 366 && checkThreeOld >= 501 || checkThreeOld <= 866))
-
-    //Limits (366 <= y <= 501)  &&  (501 >= y <= 866)
-    //Limits 366>=checkThreeOld && (501<=checkThreeOld && 866>=checkThreeOld)
-
 
     //Validation start here
-    if (idNumber.length == 10 && (checkV == true || checkv == true) && checkThreeOld <= 866) {
+    if (idNumber.length == 10 && (checkV == true || checkv == true) && (checkThreeOld <= 366 || (checkThreeOld >= 501 && checkThreeOld <= 866))) {
         document.getElementById("errorId").innerHTML = "This is a OLD NIC";
         oldNIC(idNumber);
-    } else if (idNumber.length == 12 && (checkOne == true || checkTow == true) && checkThreeNew <= 866) {
+    } else if (idNumber.length == 12 && (checkOne == true || checkTow == true) && checkThreeNew <= 366 || (checkThreeNew >= 501 && checkThreeNew <= 866)) {
         document.getElementById("errorId").innerHTML = "This is a NEW NIC";
         newNIC(idNumber);
     } else {
